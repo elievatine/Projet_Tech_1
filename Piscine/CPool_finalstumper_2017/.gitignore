@@ -1,0 +1,10 @@
+a.out
+*~
+'#*#'
+*.swp
+bin
+*.o
+*.a
+vgcore*
+cmake-build-debug
+CMakeLists.txt
