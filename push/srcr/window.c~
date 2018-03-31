@@ -1,0 +1,28 @@
+#include "../include/incl.h"
+
+
+void display()
+{
+	sfRenderWindow *window;
+	sfSprite *sprite;
+	sfTexture *texture;
+	t_framebuffer fb;
+		sfSprite_setTexture(sprite, texture, sfFalse);
+		sfTexture_updateFromPixels(texture, fb.pixels, 1920, 1080, 0, 0);
+	sfRenderWindow_display(window);
+}
+
+int		closed()
+{
+	sfRenderWindow	*window;
+	t_framebuffer	fb;
+	sfEvent event;
+	sfTexture *texture;
+	sfSprite *sprite;
+
+	sfTexture_destroy(texture);
+	sfSprite_destroy(sprite);
+	framebuffer_destroy(fb);
+	sfRenderWindow_destroy(window);
+	return (0);
+}
