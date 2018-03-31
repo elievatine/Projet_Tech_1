@@ -32,5 +32,11 @@ char	*rb_epurstr(char *str)
 		}
 		i++;
 	}
+	printf("%s", tmp);
 	return (tmp);
+}
+
+void	main(int ac, char **av)
+{
+		rb_epurstr(av[1]);
 }

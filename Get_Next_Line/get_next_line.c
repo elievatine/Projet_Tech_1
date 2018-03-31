@@ -65,3 +65,8 @@ char	*get_next_line(int fd)
 	}
 	return (NULL);
 }
+
+void	main(int ac, char **av)
+{
+	get_next_line(ac);
+}
